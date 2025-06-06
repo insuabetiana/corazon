@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes del Sagrado Corazón de Jesús - Junio 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Estilos CSS */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #8B0000;
+            /* Rojo oscuro para el Sagrado Corazón */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-family: 'Merriweather', serif;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin-top: 5px;
+            font-size: 1.1em;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #8B0000;
+            padding-top: 20px;
+            font-family: 'Merriweather', serif;
+        }
+
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            /* 7 días a la semana */
+            gap: 10px;
+            padding: 20px 0;
+        }
+
+        .day-header {
+            background-color: #D32F2F;
+            /* Rojo más claro para los encabezados */
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 4px;
+        }
+
+        .day-cell {
+            background-color: #FBEAEA;
+            /* Fondo muy claro para los días */
+            border: 1px solid #E0B4B4;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 80px;
+            /* Altura mínima para las celdas */
+            position: relative;
+            /* Para posicionar el corazón */
+        }
+
+        .day-cell:hover {
+            background-color: #E8D1D1;
+            /* Un poco más oscuro al pasar el mouse */
+        }
+
+        .day-number {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #8B0000;
+            margin-bottom: 5px;
+        }
+
+        .heart-emoji {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            font-size: 1.2em;
+            opacity: 0;
+            /* Oculto por defecto */
+            transition: opacity 0.3s ease;
+        }
+
+        .heart-emoji.visible {
+            opacity: 1;
+            /* Visible cuando se activa */
+        }
+
+        .empty-cell {
+            background-color: #f9f9f9;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            min-height: 80px;
+        }
+
+        .reflection-content {
+            display: none;
+            /* Oculto por defecto */
+            margin-top: 20px;
+            padding: 20px;
+            border-top: 1px solid #eee;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: inset 0 1px 3px rgba<ctrl60>```html < !DOCTYPE html> <html lang="es" > <head> <meta charset="UTF-8" > <meta name="viewport" content="width=device-width, initial-scale=1.0" > <title>Mes del Sagrado Corazón de Jesús - Junio 2025</title> <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)" > <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin> <link href="[https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap](https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap)" rel="stylesheet" > <style>
+
+                /* Estilos CSS */
+                body {
+                font-family: 'Open Sans', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+                color: #333;
+                line-height: 1.6;
+            }
+
+            header {
+                background-color: #8B0000;
+                /* Rojo oscuro para el Sagrado Corazón */
+                color: white;
+                padding: 20px 0;
+                text-align: center;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            }
+
+            header h1 {
+                margin: 0;
+                font-family: 'Merriweather', serif;
+                font-size: 2.5em;
+            }
+
+            header p {
+                margin-top: 5px;
+                font-size: 1.1em;
+            }
+
+            .container {
+                max-width: 1000px;
+                margin: 30px auto;
+                padding: 0 20px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            h2 {
+                text-align: center;
+                color: #8B0000;
+                padding-top: 20px;
+                font-family: 'Merriweather', serif;
+            }
+
+            .calendar {
+                display: grid;
+                grid-template-columns: repeat(7, 1fr);
+                /* 7 días a la semana */
+                gap: 10px;
+                padding: 20px 0;
+            }
+
+            .day-header {
+                background-color: #D32F2F;
+                /* Rojo más claro para los encabezados */
+                color: white;
+                font-weight: bold;
+                text-align: center;
+                padding: 10px 0;
+                border-radius: 4px;
+            }
+
+            .day-cell {
+                background-color: #FBEAEA;
+                /* Fondo muy claro para los días */
+                border: 1px solid #E0B4B4;
+                border-radius: 5px;
+                padding: 15px;
+                text-align: center;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 80px;
+                /* Altura mínima para las celdas */
+                position: relative;
+                /* Para posicionar el corazón */
+            }
+
+            .day-cell:hover {
+                background-color: #E8D1D1;
+                /* Un poco más oscuro al pasar el mouse */
+            }
+
+            .day-number {
+                font-size: 1.8em;
+                font-weight: bold;
+                color: #8B0000;
+                margin-bottom: 5px;
+            }
+
+            .heart-emoji {
+                position: absolute;
+                top: 5px;
+                right: 5px;
+                font-size: 1.2em;
+                opacity: 0;
+                /* Oculto por defecto */
+                transition: opacity 0.3s ease;
+            }
+
+            .heart-emoji.visible {
+                opacity: 1;
+                /* Visible cuando se activa */
+            }
+
+            .empty-cell {
+                background-color: #f9f9f9;
+                border: 1px solid #eee;
+                border-radius: 5px;
+                min-height: 80px;
+            }
+
+            .reflection-content {
+                display: none;
+                /* Oculto por defecto */
+                margin-top: 20px;
+                padding: 20px;
+                border-top: 1px solid #eee;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+                text-align: left;
+                /* Alinea el texto a la izquierda */
+            }
+
+            .reflection-content h3 {
+                color: #8B0000;
+                font-family: 'Merriweather', serif;
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+
+            .reflection-content h4 {
+                color: #D32F2F;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.1em;
+                margin-top: 20px;
+                margin-bottom: 8px;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 5px;
+            }
+
+            .reflection-content p {
+                margin-bottom: 15px;
+            }
+
+            .reflection-content .challenge,
+            .reflection-content .question,
+            .reflection-content .song-suggestion {
+                /* Nuevo estilo para sugerencia de canción */
+                background-color: #f9f2f2;
+                /* Fondo para secciones de desafío/pregunta/canción */
+                border-left: 4px solid #D32F2F;
+                padding: 10px 15px;
+                margin-top: 15px;
+                border-radius: 4px;
+            }
+
+            .song-suggestion a {
+                color: #8B0000;
+                /* Color del link de la canción */
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            .song-suggestion a:hover {
+                text-decoration: underline;
+            }
+
+            .close-button {
+                background-color: #8B0000;
+                color: white;
+                border: none;
+                padding: 8px 15px;
+                border-radius: 5px;
+                cursor: pointer;
+                float: right;
+                font-size: 0.9em;
+                transition: background-color 0.3s ease;
+            }
+
+            .close-button:hover {
+                background-color: #6A0000;
+            }
+
+            footer {
+                text-align: center;
+                padding: 20px;
+                margin-top: 40px;
+                background-color: #8B0000;
+                color: white;
+                font-size: 0.9em;
+                box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+            }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mes del Sagrado Corazón de Jesús</h1>
+        <p>Junio 2025: Un día, una reflexión para el Corazón de Jesús</p>
+    </header>
+
+    <div class="container">
+        <h2>Calendario</h2>
+
+        <div class="calendar">
+            <div class="day-header">Dom</div>
+            <div class="day-header">Lun</div>
+            <div class="day-header">Mar</div>
+            <div class="day-header">Mié</div>
+            <div class="day-header">Jue</div>
+            <div class="day-header">Vie</div>
+            <div class="day-header">Sáb</div>
+
+            <div class="day-cell" data-day="day1" onclick="showReflection('day1')">
+                <span class="day-number">1</span>
+                <p>La Promesa</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day2" onclick="showReflection('day2')">
+                <span class="day-number">2</span>
+                <p>Amor Infinito</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day3" onclick="showReflection('day3')">
+                <span class="day-number">3</span>
+                <p>Consagración</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day4" onclick="showReflection('day4')">
+                <span class="day-number">4</span>
+                <p>Humildad</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day5" onclick="showReflection('day5')">
+                <span class="day-number">5</span>
+                <p>Perdón</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day6" onclick="showReflection('day6')">
+                <span class="day-number">6</span>
+                <p>Paz Interior</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day7" onclick="showReflection('day7')">
+                <span class="day-number">7</span>
+                <p>Confianza</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day8" onclick="showReflection('day8')">
+                <span class="day-number">8</span>
+                <p>Obediencia</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day9" onclick="showReflection('day9')">
+                <span class="day-number">9</span>
+                <p>Caridad</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day10" onclick="showReflection('day10')">
+                <span class="day-number">10</span>
+                <p>Gratitud</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day11" onclick="showReflection('day11')">
+                <span class="day-number">11</span>
+                <p>Paciencia</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day12" onclick="showReflection('day12')">
+                <span class="day-number">12</span>
+                <p>Generosidad</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day13" onclick="showReflection('day13')">
+                <span class="day-number">13</span>
+                <p>Oración</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day14" onclick="showReflection('day14')">
+                <span class="day-number">14</span>
+                <p>Fe</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day15" onclick="showReflection('day15')">
+                <span class="day-number">15</span>
+                <p>Esperanza</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day16" onclick="showReflection('day16')">
+                <span class="day-number">16</span>
+                <p>Sacrificio</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day17" onclick="showReflection('day17')">
+                <span class="day-number">17</span>
+                <p>Alegría</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day18" onclick="showReflection('day18')">
+                <span class="day-number">18</span>
+                <p>Misericordia</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day19" onclick="showReflection('day19')">
+                <span class="day-number">19</span>
+                <p>Reparación</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day20" onclick="showReflection('day20')">
+                <span class="day-number">20</span>
+                <p>Pureza</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day21" onclick="showReflection('day21')">
+                <span class="day-number">21</span>
+                <p>Paz</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day22" onclick="showReflection('day22')">
+                <span class="day-number">22</span>
+                <p>Unión</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day23" onclick="showReflection('day23')">
+                <span class="day-number">23</span>
+                <p>Entrega</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day24" onclick="showReflection('day24')">
+                <span class="day-number">24</span>
+                <p>Fidelidad</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day25" onclick="showReflection('day25')">
+                <span class="day-number">25</span>
+                <p>Servicio</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day26" onclick="showReflection('day26')">
+                <span class="day-number">26</span>
+                <p>Adoración</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day27" onclick="showReflection('day27')">
+                <span class="day-number">27</span>
+                <p>Gratitud</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day28" onclick="showReflection('day28')">
+                <span class="day-number">28</span>
+                <p style="font-weight: bold; color: #8B0000;">Solemnidad</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day29" onclick="showReflection('day29')">
+                <span class="day-number">29</span>
+                <p>Renovación</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="day-cell" data-day="day30" onclick="showReflection('day30')">
+                <span class="day-number">30</span>
+                <p>Propósito</p>
+                <span class="heart-emoji">❤️</span>
+            </div>
+            <div class="empty-cell"></div>
+            <div class="empty-cell"></div>
+            <div class="empty-cell"></div>
+            <div class="empty-cell"></div>
+            <div class="empty-cell"></div>
+        </div>
+
+        <div id="day1" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 1: La Promesa de Su Amor</h3>
+            <p>¡Empezamos un mes a full con el Sagrado Corazón! Hoy, pensá en esa promesa gigante de Jesús: Su amor es
+                real y no tiene fin. Él te espera con los brazos abiertos, listo para darte paz y un lugar seguro, sin
+                importar lo que pase. Que este mes sea tu oportunidad para sentir Su amor de una forma súper especial.
+            </p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Hoy, dedicate 5 minutos a estar en silencio. Cerrá los ojos, respirá hondo y simplemente sentí la
+                    presencia de Jesús cerca de vos. No tenés que decir nada, solo estar.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Qué significa para vos que alguien te prometa su amor incondicional, sin importar tus errores o tus
+                    aciertos?</p>
+            </div>
+        </div>
+
+        <div id="day2" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 2: Un Amor que No Termina</h3>
+            <p>El Corazón de Jesús es como un océano de amor que nunca se agota. Es un amor que va más allá de lo que
+                podemos imaginar, un amor que te busca, te perdona y te ayuda a crecer. Hoy, abrí tu corazón y dejate
+                inundar por este amor tan grande. ¡Es para vos!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Pensá en una persona que te cuesta un poco. Hoy, hacele un gesto de amabilidad, una sonrisa, una
+                    palabra buena, aunque sea algo chiquito. Es un reflejo del amor de Jesús.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Qué cosas te impiden sentir plenamente este amor inmenso de Jesús? ¿Hay algo que te preocupa o te
+                    hace dudar?</p>
+            </div>
+        </div>
+
+        <div id="day3" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 3: Entregale tu Corazón</h3>
+            <p>¿Sabías que podés entregarle todo tu corazón al Sagrado Corazón de Jesús? No es algo raro, es simplemente
+                decirle: "Jesús, acá estoy, con todo lo que soy y lo que tengo". Entregarle tus alegrías, tus miedos,
+                tus planes, es el camino para sentir Su paz y Su guía en cada paso. ¡Él te espera con los brazos
+                abiertos para renovar Su amistad con vos!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Escribí una lista de 3 cosas que te preocupan o te ponen ansioso y, simbólicamente, entregáselas a
+                    Jesús en una oración. Decile: "Jesús, confío en vos con esto".</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Hay algo que te cuesta mucho entregarle a Jesús? ¿Por qué crees que te cuesta tanto?</p>
+            </div>
+        </div>
+
+        <div id="day4" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 4: La Humildad te Hace Grande</h3>
+            <p>El Corazón de Jesús es manso y humilde, ¡y ahí está su verdadera grandeza! A veces nos cuesta reconocer
+                nuestros errores o pedir ayuda, pero la humildad nos abre a la gracia y nos permite conectar de verdad
+                con los demás. Hoy, aprendamos de Él a ser sencillos, a no buscar siempre ser el centro, sino a servir
+                con un corazón puro.</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Hoy, pedí disculpas si te equivocaste, o agradecé sinceramente a alguien por algo pequeño que hizo
+                    por vos. Que sea un acto de humildad.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿En qué situaciones sentís que tu orgullo te impide actuar bien o relacionarte mejor con otros?</p>
+            </div>
+        </div>
+
+        <div id="day5" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 5: El Perdón que te Libera</h3>
+            <p>Del Corazón de Jesús brota un perdón que no tiene fin. Él sabe que metemos la pata, y siempre está listo
+                para perdonarnos y darnos una nueva oportunidad. Hoy, pensá en esa misericordia gigante que te libera de
+                la culpa. Y también, ¿hay alguien a quien necesites perdonar? Perdonar a otros es una forma de sentir Su
+                amor y de liberar tu propio corazón.</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Si hay alguien con quien estás enojado o resentido, intentá rezar por esa persona hoy. No tenés que
+                    hablarle, solo rezar por ella, pidiendo paz para ambos.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Qué te cuesta más: perdonar a otros o perdonarte a vos mismo? ¿Por qué crees que el perdón es tan
+                    importante para el Corazón de Jesús?</p>
+            </div>
+        </div>
+        <div id="day6" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 6: Encontrá Tu Paz Interior</h3>
+            <p>El Corazón de Jesús es fuente de paz profunda. En medio de los líos de la escuela, los amigos o las
+                preocupaciones, Él te ofrece una paz que el mundo no te puede dar. Buscá esa paz en la oración, en un
+                momento de silencio, o cuando recibís la Eucaristía. ¡Es un regalo para vos!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Antes de ir a dormir, tomá unos minutos para relajarte, respirar profundo y darle a Jesús las
+                    preocupaciones del día. Pedile que te regale Su paz.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Qué situaciones o pensamientos te roban la paz? ¿Cómo podrías invitar a Jesús a esos momentos?</p>
+            </div>
+            <div class="song-suggestion">
+                <h4>Canción para reflexionar:</h4>
+                <p><a href="[https://www.youtube.com/watch?v=Nb1VOQRs-Vs](https://www.youtube.com/watch?v=Nb1VOQRs-Vs)"
+                        target="_blank">Diego Torres - Color Esperanza</a></p>
+            </div>
+        </div>
+        <div id="day7" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 7: Confiar es Soltar y Amar</h3>
+            <p>Confiar en el Corazón de Jesús es simplemente soltar todo y ponerlo en Sus manos. Sabiendo que Él te ama
+                un montón y te cuida siempre. Dejá de lado la ansiedad por lo que vendrá, las preocupaciones por el
+                futuro, y poné tu fe en Aquel que puede con todo y que sabe lo que es mejor para vos. ¡Él te sostiene!
+            </p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Hoy, elegí una situación que te genere incertidumbre (un examen, una decisión, etc.) y decidí confiar
+                    en que Jesús tiene un plan, sin querer controlarlo todo.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Qué te cuesta más cuando se trata de confiar: en vos mismo, en los demás o en Dios? ¿Por qué?</p>
+            </div>
+        </div>
+        <div id="day8" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 8: Seguir lo que Él te Pide</h3>
+            <p>Cuando Jesús obedeció a Su Padre hasta en los momentos más difíciles, nos mostró el camino a una vida
+                plena. La obediencia a la voluntad de Dios no es ser un robot, es confiar en que Sus planes son mejores
+                que los nuestros. Hoy, escuchá la voz del Corazón de Jesús en tu conciencia y en lo que te pide tu fe.
+                ¡Ahí está la verdadera libertad!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Identificá una pequeña cosa que sabés que tenés que hacer (estudiar, ordenar tu cuarto, ayudar en
+                    casa) y hacela sin quejarte, ofreciéndosela a Jesús.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Cómo diferenciás la "voz de Jesús" de tus propios deseos o de las presiones de los demás? ¿Qué te
+                    ayuda a escuchar mejor a Jesús?</p>
+            </div>
+        </div>
+        <div id="day9" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 9: El Amor que se Desborda</h3>
+            <p>El Corazón de Jesús es el corazón de la caridad, del amor más puro. Aprendé de Él a amar a Dios con todo
+                lo que sos y a tus compañeros, a tu familia, como te amás a vos mismo. No se trata solo de grandes
+                gestos, sino de ser amable, de escuchar, de preocuparte por el otro. ¡El amor se desborda desde Él para
+                que lo compartas!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Hoy, hacé algo bueno por alguien de tu casa o escuela sin esperar nada a cambio. Que sea un acto de
+                    amor desinteresado.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Cómo podés mostrarle amor a los que te rodean en tu día a día, especialmente a aquellos con quienes
+                    te llevás peor?</p>
+            </div>
+        </div>
+        <div id="day10" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 10: ¡Gracias, Jesús!</h3>
+            <p>Hoy, tomate un momento para pensar en todas las cosas buenas que te llegan del Corazón de Jesús. Desde
+                las cosas grandes como tu familia y tus amigos, hasta los detalles más chiquitos de cada día. Tener un
+                corazón agradecido te hace ver la vida con más luz y reconocer que Él siempre está ahí, cuidándote.</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Escribí 5 cosas por las que estás agradecido hoy y pegalas en un lugar donde las veas. Dale las
+                    gracias a Jesús por cada una de ellas.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Qué cosas sueles dar por sentadas en tu vida? ¿Cómo podrías cambiar tu actitud para ser más
+                    agradecido?</p>
+            </div>
+        </div>
+        <div id="day11" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 11: La Paciencia, un Súper Poder</h3>
+            <p>El Corazón de Jesús es súper paciente con nosotros, aunque a veces seamos lentos para entender o nos
+                equivoquemos mil veces. Aprendé de Él a esperar los tiempos de Dios, a no enojarte tan rápido cuando
+                algo no sale como esperás, y a ser paciente con tus amigos y tu familia. ¡La paciencia es un superpoder
+                que te da paz!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Hoy, cuando algo te irrite o te haga perder la calma, respira profundo y pedile a Jesús la gracia de
+                    la paciencia en ese momento.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿En qué situaciones sentís que perdés más fácilmente la paciencia? ¿Cómo podrías reaccionar de manera
+                    diferente?</p>
+            </div>
+        </div>
+        <div id="day12" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 12: Generosidad sin Límites</h3>
+            <p>Jesús se entregó generosamente por nosotros hasta la Cruz. Que Su ejemplo te inspire a ser generoso con
+                tu tiempo, tus talentos (¡sí, tenés muchos!) y tus cosas. Poné todo al servicio de Dios y de los que te
+                rodean. Dar sin esperar nada a cambio te llena el alma.</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Ofrecete a hacer una tarea en casa que no te corresponde, o compartí algo que te guste mucho con
+                    alguien.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Hay alguna "cosa" o tiempo que te cuesta compartir? ¿Cómo podrías empezar a ser un poco más generoso
+                    hoy?</p>
+            </div>
+            <div class="song-suggestion">
+                <h4>Canción para reflexionar:</h4>
+                <p><a href="[https://www.youtube.com/watch?v=H7_nB_m0G7c](https://www.youtube.com/watch?v=H7_nB_m0G7c)"
+                        target="_blank">Manuel Carrasco - Que Bonito es Querer</a></p>
+            </div>
+        </div>
+        <div id="day13" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 13: ¡Hablá con Él!</h3>
+            <p>El Corazón de Jesús te invita a charlar con Él siempre, como con un amigo de verdad. No tenés que usar
+                palabras complicadas, solo hablale de lo que sentís, de tus alegrías y de tus problemas. Él te escucha.
+                Dedicale un ratito a la oración hoy: a hablar, a escuchar (¡sí, también Él te habla!) y a descansar en
+                Su amor.</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Elegí un momento del día (mientras caminás, antes de dormir) y dedicate 5-10 minutos a hablar con
+                    Jesús como si fuera tu mejor amigo. Contale tu día.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Qué te cuesta más de la oración: encontrar tiempo, saber qué decir, o sentir que te escucha? ¿Cómo
+                    te gustaría que fuera tu conversación con Jesús?</p>
+            </div>
+        </div>
+        <div id="day14" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 14: La Fe que Mueve Montañas</h3>
+            <p>Tener fe en el Corazón de Jesús es confiar aunque no entiendas todo. Es creer en Sus promesas y aceptar
+                lo que Él quiere para vos. Fortalecé tu fe hoy para que sea esa luz que te guía en la oscuridad y te da
+                seguridad en cada paso. ¡Con fe, vas a ver milagros en tu vida!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Leé un pasaje corto del Evangelio (por ejemplo, cuando Jesús calma la tempestad o sana a alguien) y
+                    reflexioná cómo Él también puede actuar en tus "tormentas".</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Qué dudas o miedos te hacen tambalear tu fe a veces? ¿Cómo te ayuda el Sagrado Corazón a
+                    fortalecerla?</p>
+            </div>
+        </div>
+        <div id="day15" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 15: La Esperanza que te Impulsa</h3>
+            <p>En el Corazón de Jesús está la esperanza más fuerte que podés tener. Él es tu resurrección y tu vida,
+                ¡así que no hay nada que temer! Mantené viva esa esperanza en la vida eterna y en que Él siempre viene a
+                tu encuentro, en cada momento. ¡La esperanza es lo que te impulsa a seguir adelante!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Pensá en un objetivo o sueño que tengas. Ofrecéselo a Jesús y pedile que te dé la esperanza y la
+                    fuerza para trabajar por él, confiando en Su ayuda.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Qué significa para vos tener esperanza en medio de las dificultades o cuando las cosas no salen como
+                    esperás?</p>
+            </div>
+        </div>
+        <div id="day16" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 16: Pequeños Sacrificios, Gran Amor</h3>
+            <p>El Corazón de Jesús se sacrificó por amor a nosotros hasta la Cruz. Hoy, podés unirte a Su sacrificio
+                ofreciendo tus pequeñas renuncias, tus esfuerzos del día, o ese momento en que te cuesta algo. Convertí
+                esas cosas en un acto de amor y reparación para Su Corazón. ¡Cada pequeño sacrificio cuenta un montón!
+            </p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Elegí una pequeña cosa que podrías renunciar hoy (un dulce, unos minutos de redes sociales, quejarte
+                    menos) y ofrecésela a Jesús por amor.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Te cuesta hacer sacrificios? ¿Cómo crees que un pequeño sacrificio diario puede cambiar tu día o tu
+                    relación con Jesús?</p>
+            </div>
+        </div>
+        <div id="day17" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 17: La Alegría Verdadera</h3>
+            <p>La alegría más auténtica no es solo cuando todo sale bien, sino la que brota del Corazón de Jesús, ¡es la
+                alegría de saberte amado por Él! Aunque haya días difíciles, Él te invita a vivir con esa alegría
+                profunda que viene de tenerlo en tu vida y de saber que tenés un lugar en el Cielo. ¡Compartí tu
+                alegría!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Hoy, busca una oportunidad para hacer reír o sonreír a alguien que lo necesite. Compartí la alegría
+                    que Jesús te da.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Qué cosas te dan verdadera alegría? ¿Cómo podés encontrar la alegría de Jesús incluso cuando las
+                    cosas no van bien?</p>
+            </div>
+        </div>
+        <div id="day18" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 18: Su Misericordia es Infinita</h3>
+            <p>El Corazón de Jesús es un pozo sin fondo de misericordia divina. Cuando sientas que metiste la pata o que
+                no das para más, acercate a Él con confianza. Te espera para perdonarte, sanarte y restaurarte con Su
+                compasión inmensa. ¡Su misericordia es siempre un abrazo para tu alma!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Si te sentís arrepentido por algo, andá a confesarte si podés, o pedile perdón a Jesús directamente
+                    en tu oración, confiando en Su misericordia.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Te cuesta pedir perdón? ¿Cómo te ayuda saber que Jesús siempre te espera con los brazos abiertos,
+                    sin juzgarte?</p>
+            </div>
+            <div class="song-suggestion">
+                <h4>Canción para reflexionar:</h4>
+                <p><a href="[https://www.youtube.com/watch?v=n-W6xVv21u0](https://www.youtube.com/watch?v=n-W6xVv21u0)"
+                        target="_blank">Agnus Dei - Hombres de Fe</a></p>
+            </div>
+        </div>
+        <div id="day19" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 19: Reparar con Amor</h3>
+            <p>El Corazón de Jesús fue herido por nuestros pecados y por la falta de amor de la gente. Hoy, podemos
+                ofrecerle pequeños actos de reparación, como rezar un rato extra, ser más obedientes, o simplemente
+                ofrecerle nuestros esfuerzos. Cada acto de amor ayuda a consolar Su Corazón que tanto nos ama. ¡Mostrale
+                que lo amás de vuelta!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Hoy, evitá quejarte o criticar a alguien. Ofrecé ese esfuerzo a Jesús en reparación por las veces que
+                    Su Corazón es lastimado.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Qué significa para vos "reparar" o "desagraviar" el Corazón de Jesús en tu vida diaria?</p>
+            </div>
+        </div>
+        <div id="day20" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 20: Un Corazón Puro, una Mirada Limpia</h3>
+            <p>El Corazón de Jesús es puro y sin mancha. Él nos invita a buscar la pureza en nuestros pensamientos, en
+                lo que decimos y en lo que hacemos. Tener un corazón puro te permite ver a Dios en todo, en cada persona
+                y en cada situación. ¡Es una mirada limpia para ver el mundo como Él lo ve!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Sé consciente de lo que miras y de lo que escuchas hoy (en redes, en series). Intentá elegir
+                    contenido que eleve tu espíritu y no lo manche.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Cómo crees que la "pureza de corazón" puede ayudarte a tomar mejores decisiones en tu vida diaria?
+                </p>
+            </div>
+        </div>
+        <div id="day21" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 21: La Paz que Cambia Todo</h3>
+            <p>El Corazón de Jesús es tu verdadera paz. En un mundo lleno de ruido, estrés y a veces conflictos, Él te
+                ofrece una paz que solo Él puede dar. Esa paz te permite descansar en Su amor y en Su plan perfecto para
+                vos. ¡Cuando tenés Su paz, todo cambia!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Si sentís que estás estresado o abrumado, buscá un lugar tranquilo, cerrá los ojos y repetí: "Jesús,
+                    confío en Ti. Dame Tu paz."</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Qué te impide sentir la paz de Jesús en tu vida? ¿Cómo podrías invitarlo más a esos momentos?</p>
+            </div>
+        </div>
+        <div id="day22" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 22: Unidos a Su Corazón</h3>
+            <p>Jesús quiere que estemos unidos a Él, bien pegaditos, como las ramas a un árbol. Permanecé en Su amor a
+                través de la oración y los sacramentos, especialmente la Eucaristía. Así, Su vida va a fluir en vos y
+                vas a dar frutos increíbles. ¡Estar unidos a Él es lo que nos da fuerza y vida!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Si podés, andá a misa hoy y recibí la Comunión con la intención de unirte más al Corazón de Jesús. Si
+                    no, rezá un Padre Nuestro ofreciéndole tu unión a Él.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Qué significa para vos "permanecer" o "estar unido" a Jesús en tu día a día?</p>
+            </div>
+            <div class="song-suggestion">
+                <h4>Canción para reflexionar:</h4>
+                <p><a href="[https://www.youtube.com/watch?v=F325jB8QhR4](https://www.youtube.com/watch?v=F325jB8QhR4)"
+                        target="_blank">Athenas - Mi Corazón Es Tuyo</a></p>
+            </div>
+        </div>
+        <div id="day23" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 23: Entregate por Completo</h3>
+            <p>Hoy, Jesús te invita a entregarle toda tu vida, sin guardarte nada. Confiale tus sueños, tus planes, tus
+                miedos, tus talentos. Él te va a guiar por el mejor camino, el de la santidad, y te va a dar la fuerza
+                que necesitás para enfrentar cualquier desafío. ¡Su amor es el mejor lugar para estar!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Escribí en un papel tus sueños más grandes o una decisión importante que tengas que tomar. Después,
+                    doblalo y ponelo en un lugar especial, como si se lo entregaras a Jesús.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Hay alguna parte de tu vida que te cuesta más entregarle a Jesús? ¿Qué te frena?</p>
+            </div>
+        </div>
+        <div id="day24" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 24: ¡Siempre Fiel!</h3>
+            <p>Jesús es fiel en todo momento, pase lo que pase, en las buenas y en las malas. Él nunca te va a dejar.
+                Hoy, renová tu compromiso de seguirlo hasta el final, de serle fiel en tus decisiones, en tus palabras y
+                en tus acciones. ¡Su fidelidad es tu mayor seguridad!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Hoy, mantené una promesa que hayas hecho (a vos mismo, a un amigo, a tu familia) por difícil que sea.
+                    Ofrecé ese esfuerzo a Jesús como signo de tu fidelidad.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿En qué momentos sentís que es más difícil ser fiel a tus principios o a tu fe? ¿Cómo puede ayudarte
+                    Jesús en esos momentos?</p>
+            </div>
+        </div>
+        <div id="day25" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 25: Servir es Amar como Él</h3>
+            <p>Cuando servís a los demás, ¡estás sirviendo directamente al Corazón de Jesús! Reconocé a Cristo en cada
+                persona, especialmente en los que más necesitan una mano o una sonrisa. Respondé a Su amor con actos
+                concretos de ayuda y generosidad. ¡Servir te llena de alegría y te conecta más con Él!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Buscá una oportunidad para hacer un pequeño servicio por alguien en tu casa o en tu escuela sin que
+                    te lo pidan. Observá la reacción de la otra persona.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Qué te frena a veces para servir a los demás? ¿Cómo podés ver a Jesús en la persona que necesita tu
+                    ayuda?</p>
+            </div>
+        </div>
+        <div id="day26" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 26: Adoralo con todo tu Ser</h3>
+            <p>Adorar el Corazón de Jesús en la Eucaristía es lo más grande que podemos hacer. En la Hostia consagrada,
+                Él está ahí, ¡realmente presente, dándose por completo por vos! Pasá un tiempo en adoración si podés,
+                orando en silencio, o simplemente diciéndole cuánto lo amás. Es un momento para repararle y amar Su
+                presencia real.</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Si es posible, visitá una iglesia y pasá unos minutos frente al Sagrario. Si no, hacé una "comunión
+                    espiritual" desde casa, pidiéndole a Jesús que venga a tu corazón.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Qué sentís cuando pensás que Jesús está realmente presente en la Eucaristía? ¿Cómo podrías acercarte
+                    más a Él en el Santísimo?</p>
+            </div>
+            <div class="song-suggestion">
+                <h4>Canción para reflexionar:</h4>
+                <p><a href="[https://www.youtube.com/watch?v=vVj44u2z3rA](https://www.youtube.com/watch?v=vVj44u2z3rA)"
+                        target="_blank">Jesús Adrián Romero - Mi Dulce Jesús</a></p>
+            </div>
+        </div>
+        <div id="day27" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 27: Agradecé sin Parar</h3>
+            <p>Hoy, volvamos a darle gracias a Jesús por todos los regalos que nos da desde Su Corazón: la vida, la fe,
+                tu familia, tus amigos, los sacramentos, y Su amor incondicional que te acompaña siempre. Tener un
+                corazón agradecido te hace ver las bendiciones en cada detalle de tu día. ¡Demos gracias por todo lo que
+                Él nos da!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Antes de ir a dormir, hacé una lista mental (o escrita) de 3 cosas que te pasaron hoy por las que
+                    estás agradecido a Jesús.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Qué es lo más grande que te ha regalado el Corazón de Jesús en tu vida? ¿Cómo expresas tu gratitud a
+                    Él?</p>
+            </div>
+        </div>
+        <div id="day28" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 28: ¡CELEBREMOS EL CORAZÓN DE JESÚS!</h3>
+            <p>¡Hoy es el día más importante de este mes! Celebramos la Solemnidad del Sagrado Corazón de Jesús. Es el
+                día para recordar ese amor ardiente y compasivo que brota de Su Corazón por cada uno de nosotros. Hoy es
+                el día para renovar tu entrega personal a Él y para consolar Su Corazón por todas las veces que no lo
+                amamos. Que Su amor sea el Rey de tu vida y de tu casa, ¡y que transforme el mundo entero!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Si podés, andá a Misa hoy, especialmente para celebrar esta Solemnidad. Si no, hacele una oración
+                    especial al Sagrado Corazón desde tu casa, renovando tu amor por Él.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Qué sentimiento te provoca pensar en el amor tan grande del Sagrado Corazón de Jesús? ¿Cómo podés
+                    hacer que Su Corazón "reine" en tu vida?</p>
+            </div>
+        </div>
+        <div id="day29" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 29: Un Corazón Nuevo, una Vida Nueva</h3>
+            <p>El Corazón de Jesús siempre te invita a empezar de nuevo, a una renovación constante. Él quiere
+                transformar tu corazón de piedra en un corazón de carne, ¡capaz de amar como Él ama! Pedile la gracia
+                para ser mejor cada día, para aprender de tus errores y para crecer en Su amor. ¡Siempre hay una nueva
+                oportunidad con Él!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Hoy, pensá en un hábito o actitud que quieras mejorar. Pedile a Jesús que te dé la fuerza para
+                    empezar a cambiarlo, por Su amor.</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>¿Hay algo en tu vida que sentís que necesitás "renovar" o cambiar para acercarte más a Jesús?</p>
+            </div>
+        </div>
+        <div id="day30" class="reflection-content">
+            <button class="close-button" onclick="hideReflection()">X</button>
+            <h3>Día 30: Llevá Su Amor al Mundo</h3>
+            <p>Terminamos este mes especial, pero la misión de llevar el amor del Sagrado Corazón de Jesús a los demás
+                ¡recién empieza! Sé un testigo de Su amor en tu vida diaria, con tu ejemplo, con tu alegría, con tus
+                palabras. Difundí Su devoción y Su mensaje de esperanza y salvación. Que el Corazón de Jesús reine en tu
+                hogar, en tu escuela, en tus amigos y ¡en el mundo entero!</p>
+            <div class="challenge">
+                <h4>Desafío del Día:</h4>
+                <p>Pensá en una forma concreta en que podés compartir lo que aprendiste este mes del Sagrado Corazón con
+                    alguien más (puede ser con una palabra, un gesto o una acción).</p>
+            </div>
+            <div class="question">
+                <h4>Para Reflexionar:</h4>
+                <p>Después de este mes, ¿qué te llevás del Corazón de Jesús? ¿Cómo podés mantener viva esta devoción el
+                    resto del año?</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2025 Mes del Sagrado Corazón de Jesús. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        // JavaScript para mostrar/ocultar las reflexiones y el emoji
+        let currentOpenReflection = null; // Variable para rastrear la reflexión actualmente abierta
+
+        function showReflection(dayId) {
+            // Ocultar la reflexión actualmente abierta si hay una
+            if (currentOpenReflection && currentOpenReflection.id !== dayId) {
+                currentOpenReflection.style.display = 'none';
+            }
+
+            const reflectionDiv = document.getElementById(dayId);
+            if (reflectionDiv) {
+                reflectionDiv.style.display = 'block'; // Mostrar la reflexión
+                currentOpenReflection = reflectionDiv; // Actualizar la reflexión actualmente abierta
+
+                // Desplazarse a la reflexión mostrada
+                reflectionDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                // Mostrar el emoji de corazón en la celda del día
+                const dayCell = document.querySelector(`.day-cell[data-day="${dayId}"]`);
+                if (dayCell) {
+                    const heartEmoji = dayCell.querySelector('.heart-emoji');
+                    if (heartEmoji) {
+                        heartEmoji.classList.add('visible');
+                    }
+                }
+            }
+        }
+
+        function hideReflection() {
+            if (currentOpenReflection) {
+                currentOpenReflection.style.display = 'none'; // Ocultar la reflexión
+                currentOpenReflection = null; // Resetear la variable
+            }
+        }
+    </script>
+
+</body>
+
+</html>
